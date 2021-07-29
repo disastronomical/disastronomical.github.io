@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="HRicon.svg" />
+    <link rel="manifest" href="manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hyperrocket BSC</title>
+  </head>
+  <body>
+    <script>
+      screen.orientation.lock('landscape');
+    </script>
+    <div class="box">
+      <h1>Stand out from the crowd...</h1>
+    </div>
+    <div class="slide1">
+      <h2>NAME/SYMBOL: HYPERROCKETBSC</h2>
+      <p id="p1"><img id="icon" src="HRIconT.png" alt="HyperRocket logo">Original Supply of 1,000,000,000,000,000</p>
+      <p id="p2"><img id="icon" src="HRIconT.png" alt="HyperRocket logo">Locked LP and 80% of supply burned</p>
+      <p id="p3"><img id="icon" src="HRIconT.png" alt="HyperRocket logo">Anti-Whale: 5,000,000,000,000 tokens/trade</p>
+    </div>
+    <div class="slide2">
+      <h2>CONTRACT INFORMATION</h2>
+      <p id="contract"><img id="icon" src="HRIconT.png" alt="HyperRocket logo">0x12bad526ef2880684ce3e7199ac9ef8dfcc95928<button onclick="CopyToClipboard()"><img id="clip" src="clip.png"></button></p>
+      <p id="contracts">0x12bad526ef2880684ce3e7199ac9ef8dfcc95928</p>
+      <script>
+        function CopyToClipboard() {
+          var selectText = document.getElementById('contracts').innerHTML;
+          var input = document.createElement('input');
+          input.value = selectText;
+          document.body.appendChild(input);
+          input.select();
+          document.execCommand("copy");
+          document.body.removeChild(input);
+        };
+        </script>
+      <p id="erc"><img id="icon" src="HRIconT.png" alt="HyperRocket logo">ERC-20 token traded on the Binance Smart Chain network</p>
+      <p id="buy"><img id="icon" src="HRIconT.png" alt="HyperRocket logo">Click on "HyperRocketbsc" below to purchase</p>
+    </div>    
+    <div class="slide3">
+      <h3>CHARTS</h3>
+      <p id="info">For up to date information,</p>
+      <p id="poo"><img id="icon2" src="HRIconT.png" alt="HyperRocket logo"><a href="https://poocoin.app/tokens/0xfedfab9dcc1624fd325efed8dd16431b3416ec52" style="color: white;">click here for PooCoin charts</a></p>
+      <p id="dex"><img id="icon2" src="HRIconT.png" alt="HyperRocket logo"><a href="https://google.com" style="color: white;">click here for DexTools charts</a></p>
+    </div>    
+    <div class="slide4">
+      <h4>COMMUNITY</h4>
+      <p id="comm">Be part of our community today!</p>
+      <p id="join"><img id="icon2" src="HRIconT.png" alt="HyperRocket logo"><a href="https://t.me/hypperrocketbsc" style="color: white;">Join our <img id="tg" src="tg1.png"> channel</a></p>
+    </div>    
+    <canvas id="bg">
+    <script src='https://code.createjs.com/1.0.0/tweenjs.min.js'></script>
+    <script type="module" src="/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script>
+      
+      const h1 = document.querySelector('h1')
+      const p = document.querySelector('p') 
+      const tl = gsap.timeline();
+      const h2 = document.querySelector('h2')
+      
+      tl.to(".box", {delay: 0.5, duration: 1.3, clipPath: 'polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%)'})
+      tl.to('h1',{delay: -1.5, duration:1.6, clipPath: 'polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%)'});
+      tl.to(".box", {delay: 0.5, duration: 1, clipPath: 'polygon(100% 0%, 100% 100%, 100% 100%, 100% 0%)'})
+      tl.to('h1',{delay: -0.5, duration: 1, clipPath: 'polygon(100% 0%, 100% 100%, 100% 100%, 100% 0%)'});
+    </script>
+    </canvas>
+    </body>
+</html>
