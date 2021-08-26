@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.17e50649.svg" />
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAS Project</title>
+    <script type="module" crossorigin src="/assets/index.9ae0a77c.js"></script>
+    <link rel="stylesheet" href="/assets/index.718014df.css">
+  </head>
+  <body>
+    <!--Navbar Section-->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo">CYBER ARTS</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page" device="controls">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page" device="controls">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#games" class="navbar__links" id="games-page" device="controls">Games</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#team" class="navbar__links" id="careers-page" device="controls">Team</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#contact" class="navbar__links" id="games-page" device="controls">Contact</a>
+          </li> 
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <video id="vid" autoplay muted loop>
+          <source src="/assets/calogo2.ffe31656.mp4" type="video/mp4" media="all and (min-width: 1000px)">
+        </video>
+        <div class="hero__slogan">
+        <h2 class="hero__description">Welcome to the Future of Gaming</h2>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      gsap.from(".hero__description", {
+        opacity: 0,
+        duration: 5,
+        delay: 1
+      });
+
+      gsap.to(".hero__description", {
+        clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 100% 0%)',
+        duration: 3,
+        delay: 6
+      });
+
+      </script>
+
+    <!-- Hero Section -->
+    <div class="quote" id="second">
+      <div class="quote__container">
+        <h2 class="text" data-text="Dedicated to the creation of immersive NFT and Blockchain games">Dedicated to the creation of immersive NFT and Blockchain games</h2>
+      </div>
+    </div>
+    
+    <script>
+      gsap.from(".text", {
+        scrollTrigger: ".text",
+        x:-10000,
+        delay: 0.5
+      })
+    </script>
+
+    <!-- About Section -->
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="main__content">
+          <div class="main__box">
+            <h1>Who Are We?</h1>
+          <p>Cyber Arts Studios was founded in 2021, at the beginning of  the NFT boom.  Cyber Arts was formed as a necessary tool for the mass integration of blockchain technology into the gaming sector. This is the beginning of the NFT gaming revolution, we are here to facilitate this movement and embrace the direction that it takes us. Come join us on this journey into the future where crypto will dominate the gaming industry.</p>
+          <p>Cyber Arts Studios is dedicated to the creation of immersive NFT and blockchain based games. We collaborate with the leaders of the industry to build products that continue to embrace the expansion of this sector. </p>
+        </div>
+        </div>
+        <div class="main__img--container">
+          <div class="main__img--card"><img src="/assets/CATeam.59dbfe12.jpg"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+    gsap.from(".main__box", {
+      scrollTrigger: ".main__box",
+      opacity: 0,
+      duration: 5,
+      delay: 0.5
+    });
+    </script>
+    <!-- Games Section -->
+    <div class="games" id="games">
+      <h1>GAMES</h1>
+      <div class="games__wrapper">
+        <div class="games__card">
+          <p>CyBall is the first game released by Cyber Arts Studio. Soccer like you’ve never played it before. Collect your team of Cybloc NFTs, trade and play against other players. A football themed NFT-based play to earn game that allows you to collect, trade and battle other players to earn a profit while you build your dream team and rise to the ranks.
+            Find out more at <a href id="link" src="www.cyball.com">Cyball.com</a></p>
+        </div>
+      </div>
+    </div>
+<script>
+  gsap.from(".games", {
+    scrollTrigger: ".games__card",
+    opacity: 0,
+    delay: 0.5,
+    duration: 5
+  })
+</script>
+
+
+<!-- Team Section -->
+<div class="team" id="team">
+  <h1>OUR TEAM</h1>
+  <div class="team__wrapper">
+    <div class="team__card">
+      <p>The Cyber Arts team comprises of over 30 people across the world, from Australia to Hong Kong to Vietnam, who come together to create engaging and immersive gaming experiences.</p>
+    </div>
+  </div>
+</div>
+<script>
+gsap.from(".team__card", {
+  scrollTrigger: ".team__card",
+  opacity: 0,
+  delay: 0.5,
+  duration: 3
+})
+</script>
+    <!-- Footer Section -->
+    <div class="footer__container" id="contact">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Contact Us</h2>
+            <p>For any queries, please reach us at: @cyberarts.com</p>
+            <button class="main__btn"><a href="#">CONTACT</a></button>
+          </div>
+        </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo">CYBER ARTS</a>
+          </div>
+          <p class="website__rights">© CYBERARTS 2021. All rights reserved</p>
+          <div class="social__icons">
+            <a href="/" class="social__icon--link" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+  </body>
+</html>
